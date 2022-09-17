@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Reto Encriptador</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="container">
+		
+		<div id="icon-container">
+			<img src="images/alura-icon.png">
+		</div>
+
+		<div id="input-container">
+			<textarea 	id="input-txt"
+						class="texto txt-blue"
+						rows="25"
+						cols="30"
+						placeholder="Ingrese el texto aqui"
+						autofocus></textarea>
+			<div>
+				<p>&ii; Solo letras minúsculas y sin acentos</p>
+				<div>
+					<button class="btn btn-blue" 
+							onclick="mostrarEncriptado()">Encriptar</button>
+					<button class="btn" 
+							onclick="mostrarDesencriptado()">Desencriptar</button>
+				</div>
+			</div>
+		</div>
+		
+		<div id="result-container">
+			<img id="shadow-img" src="images/backg.png">
+
+			<textarea	id="output-txt"
+						class="texto"
+						rows="25"
+						cols="25"
+						disabled></textarea>
+			<button id="copy" class="btn" onclick="copy()">Copiar</button>
+		</div>
+
+	</div>
+	<footer>Hola! soy Matheo, estudiante y programador. &#9754</footer>
+	<script src="main.js"></script>
+</body>
+</html>
